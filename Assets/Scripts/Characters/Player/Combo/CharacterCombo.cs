@@ -86,7 +86,8 @@ namespace ZZZ
         {
             Vector3 camForwardDir = Vector3.zero;
 
-            camForwardDir.Set(_reusableData.cameraTransform.forward.x, 0, _reusableData.cameraTransform.forward.z);
+            var v3Forward = _reusableData.cameraTransform.forward;
+            camForwardDir.Set(v3Forward.x, 0, v3Forward.z);
 
             camForwardDir.Normalize();
 
@@ -100,6 +101,7 @@ namespace ZZZ
             UpdateDetectionDir();
 
             var position = _selfTransform.position;
+
             _reusableData.detectionOrigin = new Vector3(position.x, position.y + 0.7f, position.z);
 
             if (Physics.SphereCast(_reusableData.detectionOrigin, _enemyDetectionData.detectionRadius,
@@ -135,9 +137,9 @@ namespace ZZZ
 
             //播放切人动画
             _animator.Play(_reusableData.currentSkill.comboName);
-            
+
             _animator.Update(0f);
-            
+
             player.comboStateMachine.ChangeState<PlayerSkillState>();
 
             //播放语音

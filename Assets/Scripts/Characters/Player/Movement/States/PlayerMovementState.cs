@@ -59,7 +59,7 @@ namespace ZZZ
 
             //Mathf.Atan2 返回正切值为y/x的弧度角
             _reusableData.targetAngle = Mathf.Atan2(movementDirection.x, movementDirection.y) * Mathf.Rad2Deg
-                                        + _player.mainCamera.eulerAngles.y;
+                                        + _player.tfMainCamera.eulerAngles.y;
 
             _player.transform.eulerAngles = Vector3.up * Mathf.SmoothDampAngle(_player.transform.eulerAngles.y,
                 _reusableData.targetAngle, ref _currentVelocity, _reusableData.rotationTime);

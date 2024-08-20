@@ -12,6 +12,7 @@ namespace ZZZ
 
         [Header("Player状态")] public string movementStateName;
 
+        //显示当前ComboState
         public string comboStateName;
 
         public Transform enemy;
@@ -25,13 +26,13 @@ namespace ZZZ
         public StateMachine movementStateMachine { get; private set; }
         public StateMachine comboStateMachine { get; private set; }
 
-        public Transform mainCamera { get; private set; }
+        public Transform tfMainCamera { get; private set; }
 
         protected override void Awake()
         {
             base.Awake();
 
-            mainCamera = Camera.main.transform;
+            tfMainCamera = Camera.main.transform;
             stateReusableData = new PlayerStateReusableData();
             comboReusableDate = new PlayerComboReusableData();
             characterCombo = new CharacterCombo(this);
@@ -186,7 +187,7 @@ namespace ZZZ
         {
             characterCombo.ATK();
         }
-
+        
         #endregion
     }
 }

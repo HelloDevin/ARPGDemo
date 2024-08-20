@@ -22,7 +22,7 @@ namespace ZZZ
             _comboSOData = player.playerSO.comboData.comboSOData;
             _enemyDetectionData = player.playerSO.comboData.enemyDetectionData;
             _reusableData = player.comboReusableDate;
-            _reusableData.cameraTransform = player.mainCamera;
+            _reusableData.cameraTransform = player.tfMainCamera;
             this.player = player;
 
             if (_comboSOData.lightCombo != null)
@@ -230,6 +230,7 @@ namespace ZZZ
         {
             if (GameBlackboard.Instance.GetEnemy() == null) return;
 
+            //每段攻击前30%人物可以转向
             if (_animator.StateAtTag("ATK") && _animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.3f ||
                 _animator.StateAtTag("Skill"))
 
