@@ -88,6 +88,37 @@ MonoBehaviour:
     roll: 0
   - position: {x: 0, y: 4.885, z: -2.68}
     roll: 0
+--- !u!1 &1381663734163195844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 815587597083096043}
+  m_Layer: 7
+  m_Name: AnBi_Skill_01_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &815587597083096043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381663734163195844}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.58586514, y: 0.80991036, z: 0.02669298, w: -0.009734271}
+  m_LocalPosition: {x: 0.242, y: 0.538, z: 0.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2167159549324668740}
+  m_LocalEulerAnglesHint: {x: -3.132, y: 179.11, z: 71.786}
 --- !u!1 &1598538454833769750
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +274,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2167159549324668740}
   m_LocalEulerAnglesHint: {x: -13.105, y: -204.927, z: 164.411}
+--- !u!1 &3570972364587801556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7467725883114049194}
+  m_Layer: 7
+  m_Name: AnBi_FinishSkill_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7467725883114049194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3570972364587801556}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.87515223, y: 0.48384774, z: -0, w: 0}
+  m_LocalPosition: {x: 0.02, y: 1.16, z: 0.734}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2167159549324668740}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -122.126}
 --- !u!1 &4054098710925269310
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,8 +503,42 @@ Transform:
   - {fileID: 498261513555240917}
   - {fileID: 5158681201357032912}
   - {fileID: 7691137979035801652}
+  - {fileID: 7467725883114049194}
+  - {fileID: 815587597083096043}
+  - {fileID: 7304762433399425168}
   m_Father: {fileID: 3975201113598766501}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6466680606367274795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7304762433399425168}
+  m_Layer: 7
+  m_Name: AnBi_Skill_01_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7304762433399425168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6466680606367274795}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.6280385, y: 0.7781822, z: -0, w: 0}
+  m_LocalPosition: {x: 0.218, y: 1.994, z: 0.117}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2167159549324668740}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 77.811}
 --- !u!1 &6735729539212633196
 GameObject:
   m_ObjectHideFlags: 0

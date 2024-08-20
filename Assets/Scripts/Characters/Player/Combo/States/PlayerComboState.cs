@@ -68,12 +68,8 @@ namespace ZZZ
 
         protected virtual void OnAttackInput(InputAction.CallbackContext context)
         {
-            Debug.Log(
-                $"TEST=> OnAttackInput canInput:{_reusableData.canInput} canATK:{_reusableData.canATK} hasATKCommand:{_reusableData.hasATKCommand}");
             if (_characterCombo.CanComboInput())
             {
-                Debug.Log(
-                    $"TEST=> CanComboInput canInput:{_reusableData.canInput} canATK:{_reusableData.canATK} hasATKCommand:{_reusableData.hasATKCommand}");
                 if (_player.movementStateMachine.IsState<PlayerSprintingState>() || _animator.StateAtTag("Dodge"))
                 {
                     Debug.Log("闪避攻击");
